@@ -1,92 +1,149 @@
 <!doctype html>
 <html lang="pt-BR" data-theme="dark">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Cosmakelab – Cosprysma</title>
-  <meta name="description" content="Tutoriais e processos de criação de cosplay: maquiagem, peruca, acessórios e props."/>
-  <meta name="theme-color" content="#7C3AED"/>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cosmakelab – Tutoriais e processos | Cosprysma</title>
+    <meta
+      name="description"
+      content="Tutoriais e bastidores de criação: perucas, figurinos, eletrônica e soluções criativas para cosplay."
+    />
+    <meta name="theme-color" content="#7C3AED" />
 
-  <link rel="manifest" href="manifest.webmanifest"/>
-  <link rel="icon" href="img/logoprincipal.jpeg"/>
-  <link rel="apple-touch-icon" href="icons/icon-192.png"/>
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../img/logo.jpg" />
+    <link rel="apple-touch-icon" href="../icons/icon-192.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
- <link rel="stylesheet" href="/css/style.css"></head>
-<body>
-  <div class="bg-mesh" aria-hidden="true"></div>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="bg-mesh" aria-hidden="true"></div>
 
-  <header class="topbar glass">
-    <div class="container nav-flex">
-      <a class="brand" href="index.html" aria-label="Página inicial">
-          <img src="/img/logo.png" alt="Cosprysma" width="32" height="32" />
-      </a>
-     <nav class="mainnav" id="nav">
+    <header class="topbar glass">
+      <div class="container nav-flex">
+        <a class="brand" href="index.html" aria-label="Página inicial">
+          <img src="../img/logo.png" alt="Cosprysma" width="32" height="32" />
+          <span>Cosprysma</span>
+        </a>
+        <nav class="mainnav" id="nav">
           <a href="index.html">Início</a>
-          <a href="reportagem-queren-garcia.html">Estrela da Semana</a>
-          <a href="reportagem-fernanda-melo.html">Fanart</a>
-          <a href="reportagem-hidan-dosu.html">Flashcosplay</a>
+          <a href="estrela-da-semana.html">Estrela da Semana</a>
+          <a href="fanart.html">Fanart</a>
+          <a href="flashcosplay.html">Flashcosplay</a>
           <a href="reportagem-agenda-cultural.html">Agenda</a>
           <a href="tutoriais.html">Cosmakelab</a>
           <a href="falacosplay.html">Fala Cosplay</a>
           <a href="galeria.html">Galeria</a>
           <a href="contato.html">Contato</a>
           <a class="cta" href="fala.html">Fala, Cosplayer!</a>
+          <a href="servicos-comunidade.html">Propagandas</a>
           <a class="admin-link" href="login.html">Área do admin</a>
         </nav>
-      <div class="nav-actions">
-        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema">Tema</button>
-        <button id="burger" class="icon-btn burger" aria-label="Abrir menu">☰</button>
+        <div class="nav-actions">
+          <button
+            id="theme-toggle"
+            class="icon-btn"
+            aria-label="Alternar tema"
+          ></button>
+          <button
+            id="burger"
+            class="icon-btn burger"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <main class="container">
-    <header class="page-head">
-      <h1>Cosmakelab</h1>
-      <p class="lead">
-        Tutoriais e processos de criação: maquiagem, peruca, acessórios e props, com passo a passo em fotos.
-      </p>
     </header>
 
-    <section class="row wrap gap reveal">
-      <input id="tutorial-search" type="search" placeholder="Buscar tutoriais…"/>
-      <div class="chips" id="tutorial-tags"></div>
-    </section>
+    <main class="container">
+      <header class="page-head">
+        <p class="kicker">Cosmakelab</p>
+        <h1>Bastidores de criação e tutoriais</h1>
+        <p class="lead">
+          Perucas recuperadas, figurinos econômicos e tecnologia inspirada em
+          heróis: um laboratório de ideias para o seu cosplay.
+        </p>
+      </header>
 
-    <section id="tutorials" class="cards three reveal">
-      <!-- cards carregados via assents/tutoriais.js -->
-    </section>
-  </main>
+      <section class="cards-list">
+        <!-- CARD 1 – PERUCA VAPOR -->
+        <article class="card card-media glass">
+          <div class="card-body">
+            <h2>Peruca salva: o truque do vapor</h2>
+            <p class="meta">Tutorial | Cosmakelab</p>
+            <p class="post-content">
+              Passo a passo para recuperar perucas sintéticas usando vapor ou
+              água quente, alinhando as fibras sem derreter o material.
+            </p>
+            <p style="margin-top: 0.5rem;">
+              <a href="cosmakelab-peruca-vapor.html" class="btn">
+                Ver tutorial
+              </a>
+            </p>
+          </div>
+        </article>
 
-  <footer class="footer glass">
-    <div class="container footer-grid">
-      <section>
-        <h4>Sobre</h4>
-        <p>O Cosprysma é um jornal comunitário feito por e para cosplayers. Participe, envie fotos e matérias!</p>
+        <!-- CARD 2 – COSPLAY ECONÔMICO -->
+        <article class="card card-media glass">
+          <div class="card-body">
+            <h2>Cosplay sem gastar horrores</h2>
+            <p class="meta">Tutorial | Cosmakelab</p>
+            <p class="post-content">
+              Truques de costura, reaproveitamento de roupas e materiais
+              alternativos para montar cosplay com orçamento apertado.
+            </p>
+            <p style="margin-top: 0.5rem;">
+              <a href="reportagem-cosplay-economico.html" class="btn">
+                Ler matéria
+              </a>
+            </p>
+          </div>
+        </article>
+
+       
       </section>
-      <section>
-        <h4>Redes</h4>
-        <ul class="inline-list">
-          <li>
-            <a
-              href="https://www.instagram.com/cosprysma_/?igsh=MXYxMDB0dWZhem9ncw%3D%3D&utm_source=qr"
-              target="_blank"
-              rel="noopener"
-            >Instagram</a>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div class="copyright">© 2025 Cosprysma. Feito pela comunidade.</div>
-  </footer>
+    </main>
 
-  <button class="to-top" aria-label="Voltar ao topo">Topo</button>
+    <footer class="footer glass">
+      <div class="container footer-grid">
+        <section>
+          <h4>Sobre</h4>
+          <p>
+            O Cosprysma é um jornal comunitário feito por e para cosplayers.
+            Participe, envie fotos e matérias!
+          </p>
+        </section>
+        <section>
+          <h4>Redes</h4>
+          <ul class="inline-list">
+            <li>
+              <a
+                href="https://www.instagram.com/cosprysma_/?igsh=MXYxMDB0dWZhem9ncw%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright">
+        © 2025 Cosprysma. Feito pela comunidade.
+      </div>
+    </footer>
 
-  <script src="assents/main.js" defer></script>
-  <script src="assents/tutoriais.js" defer></script>
-</body>
+    <button class="to-top" aria-label="Voltar ao topo">Topo</button>
+
+    <script src="/assents/config.js" defer></script>
+    <script src="/assents/main.js" defer></script>
+  </body>
 </html>
