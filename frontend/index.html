@@ -26,14 +26,16 @@
   <body>
     <div class="bg-mesh" aria-hidden="true"></div>
 
+    <!-- ============== HEADER / NAVBAR ============== -->
     <header class="topbar glass">
       <div class="container nav-flex">
         <a class="brand" href="index.html" aria-label="Página inicial">
           <img src="../img/logo.png" alt="" width="32" height="32" />
           <span>Cosprysma</span>
         </a>
-       <nav class="mainnav" id="nav">
-        <nav class="mainnav" id="nav">
+
+        <!-- APENAS UM NAV COM ID CONSISTENTE -->
+        <nav class="mainnav" id="mainnav">
           <a href="index.html">Início</a>
           <a href="estrela-da-semana.html">Estrela da Semana</a>
           <a href="fanart.html">Fanart</a>
@@ -46,6 +48,7 @@
           <a class="cta" href="fala.html">Fala, Cosplayer!</a>
           <a class="admin-link" href="login.html">Área do admin</a>
         </nav>
+
         <div class="nav-actions">
           <button
             id="theme-toggle"
@@ -57,6 +60,7 @@
             class="icon-btn burger"
             aria-label="Abrir menu"
             aria-expanded="false"
+            aria-controls="mainnav"
           >
             ☰
           </button>
@@ -203,12 +207,14 @@
         </article>
       </section>
 
-      <!-- REPORTAGEM – AGENDA CULTURAL -->
+      <!-- REPORTAGEM – AGENDA CULTURAL (ARRUMADA) -->
       <section class="reveal">
         <header class="section-head">
           <h2>Agenda cultural</h2>
         </header>
 
+        <article class="card glass">
+          <div class="card__body">
             <p class="muted">
               Encontros, festas e convenções em Curitiba, Rio de Janeiro e
               Macaé: ACE 2025, Bailão Cosplay, Rolé Favela Geek, Cosfantasy
@@ -279,8 +285,6 @@
           </div>
         </article>
       </section>
-
-   
     </main>
 
     <footer class="footer glass">
@@ -313,8 +317,25 @@
 
     <button class="to-top" aria-label="Voltar ao topo">Topo</button>
 
+    <!-- Seus scripts -->
     <script src="/assents/config.js" defer></script>
     <script src="/assents/main.js" defer></script>
     <script src="/assents/home.js" defer></script>
+
+    <!-- Se preferir garantir o burger aqui, pode usar este script inline:
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const burger = document.getElementById('burger');
+        const mainnav = document.getElementById('mainnav');
+
+        if (burger && mainnav) {
+          burger.addEventListener('click', () => {
+            const isOpen = mainnav.classList.toggle('open');
+            burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          });
+        }
+      });
+    </script>
+    -->
   </body>
 </html>
