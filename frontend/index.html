@@ -26,15 +26,12 @@
   <body>
     <div class="bg-mesh" aria-hidden="true"></div>
 
-    <!-- ============== HEADER / NAVBAR ============== -->
     <header class="topbar glass">
       <div class="container nav-flex">
         <a class="brand" href="index.html" aria-label="Página inicial">
           <img src="../img/logo.png" alt="" width="32" height="32" />
           <span>Cosprysma</span>
         </a>
-
-        <!-- APENAS UM NAV COM ID CONSISTENTE -->
         <nav class="mainnav" id="mainnav">
           <a href="index.html">Início</a>
           <a href="estrela-da-semana.html">Estrela da Semana</a>
@@ -46,9 +43,9 @@
           <a href="galeria.html">Galeria</a>
           <a href="contato.html">Contato</a>
           <a class="cta" href="fala.html">Fala, Cosplayer!</a>
+          <a href="servicos-comunidade.html">Propagandas</a>
           <a class="admin-link" href="login.html">Área do admin</a>
         </nav>
-
         <div class="nav-actions">
           <button
             id="theme-toggle"
@@ -60,7 +57,6 @@
             class="icon-btn burger"
             aria-label="Abrir menu"
             aria-expanded="false"
-            aria-controls="mainnav"
           >
             ☰
           </button>
@@ -207,7 +203,7 @@
         </article>
       </section>
 
-      <!-- REPORTAGEM – AGENDA CULTURAL (ARRUMADA) -->
+      <!-- REPORTAGEM – AGENDA CULTURAL -->
       <section class="reveal">
         <header class="section-head">
           <h2>Agenda cultural</h2>
@@ -234,29 +230,7 @@
           </div>
         </article>
       </section>
-      
-      <section class="reveal">
-        <header class="section-head">
-          <h2>Vozes da comunidade</h2>
-          <a class="link" href="falacosplay.html">Ver todas as entrevistas</a>
-        </header>
 
-        <div class="grid.two">
-          <article class="card gradient-border">
-            <div class="card__body">
-              <h3>“Fala, Cosplayer!” – Márcio</h3>
-              <p class="muted" style="font-size: 0.9rem;">
-                Entre bastidores de apresentações, figurinos coloridos e carinho
-                do público, Márcio conta como o cosplay virou parte da rotina e
-                da vida em família.
-              </p>
-              <a class="btn ghost" href="fala-cosplayer-marcio.html">
-                Ler entrevista
-              </a>
-            </div>
-          </article>
-
-          
       <!-- NOVAS REPORTAGENS – EMILLY, FANATISMO, ANA SOPHIA -->
       <section class="cards three reveal">
         <header class="section-head">
@@ -294,6 +268,59 @@
           </div>
         </article>
 
+        <article class="card gradient-border">
+          <div class="card__body">
+            <h3>A arte de dar vida aos rostos do palco</h3>
+            <p class="muted">
+              Aos 16 anos, Ana Sophia Baracho Martins já é maquiadora artística
+              no teatro e no cosplay, transformando rostos comuns em personagens
+              intensos.
+            </p>
+            <a class="link" href="reportagem-ana-sophia-maquiagem.html">
+              Ler reportagem
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- VOZES DA COMUNIDADE – MARCIO & DOUGLAS -->
+      <section class="reveal">
+        <header class="section-head">
+          <h2>Vozes da comunidade</h2>
+          <a class="link" href="falacosplay.html">Ver todas as entrevistas</a>
+        </header>
+
+        <div class="grid.two">
+          <article class="card gradient-border">
+            <div class="card__body">
+              <h3>“Fala, Cosplayer!” – Márcio</h3>
+              <p class="muted" style="font-size: 0.9rem;">
+                Entre bastidores de apresentações, figurinos coloridos e carinho
+                do público, Márcio conta como o cosplay virou parte da rotina e
+                da vida em família.
+              </p>
+              <a class="btn ghost" href="fala-cosplayer-marcio.html">
+                Ler entrevista
+              </a>
+            </div>
+          </article>
+
+          <article class="card gradient-border">
+            <div class="card__body">
+              <h3>“Fala, Cosplayer!” – Douglas Rodrigues</h3>
+              <p class="muted" style="font-size: 0.9rem;">
+                Cosplays cheios de presença de palco, amizade construída em
+                eventos e a importância da representatividade na cultura pop:
+                Douglas compartilha sua trajetória na cena.
+              </p>
+              <a class="btn ghost" href="fala-cosplayer-douglas.html">
+                Ler entrevista
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <!-- 3 CARDS PRINCIPAIS -->
       <section class="cards three reveal">
         <article class="card gradient-border">
@@ -308,7 +335,7 @@
               Estrela da Semana, Fanart, Flashcosplay, Agenda, Cosmakelab e
               Fala Cosplay — tudo em um só lugar.
             </p>
-            <a class="link" href="editorias.html">Ler editorias</a>
+            <a class="link" href="editorial.html">Ler editorias</a>
           </div>
         </article>
 
@@ -344,6 +371,7 @@
           </div>
         </article>
       </section>
+      
     </main>
 
     <footer class="footer glass">
@@ -376,25 +404,8 @@
 
     <button class="to-top" aria-label="Voltar ao topo">Topo</button>
 
-    <!-- Seus scripts -->
     <script src="/assents/config.js" defer></script>
     <script src="/assents/main.js" defer></script>
     <script src="/assents/home.js" defer></script>
-
-    <!-- Se preferir garantir o burger aqui, pode usar este script inline:
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const burger = document.getElementById('burger');
-        const mainnav = document.getElementById('mainnav');
-
-        if (burger && mainnav) {
-          burger.addEventListener('click', () => {
-            const isOpen = mainnav.classList.toggle('open');
-            burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-          });
-        }
-      });
-    </script>
-    -->
   </body>
 </html>
